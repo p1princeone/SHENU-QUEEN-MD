@@ -28,8 +28,8 @@ require("dotenv").config();
   const ffmpeg = require('fluent-ffmpeg');
 // Your code using fetch here
   const { MessageType, Mimetype } = require('@adiwajshing/baileys');
-const botname = "GSS Botwa";
-const OWNER_NAME = "Sid bhai";
+const botname = "℘ཞıŋƈɛ◎ŋɛ";
+const OWNER_NAME = "Princeone";
    const crypto = require('crypto');
   const fg = require('api-dylux');
 const { pipeline } = require('stream');
@@ -71,13 +71,13 @@ const numberQuery = text.replace(new RegExp("[()+-/ +/]", "gi"), "") + "@s.whats
 const mentionByTag = m.mtype == "extendedTextMessage" && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.mentionedJid : []
 const Input = mentionByTag[0] ? mentionByTag[0] : q ? numberQuery : false
 const qtod = m.quoted? "true":"false"
-const owner = "919142294671";
+const owner = "254793651678";
 
 const MODE = process.env.MODE;
 
 //const thinking = await client.sendMessage(m.chat, { text: 'Thinking...' }); 
-const BOT_NAME = process.env.BOT_NAME || 'GSS Botwa'
-const OWNER_NAME = process.env.OWNER_NAME || 'Goutam'
+const BOT_NAME = process.env.BOT_NAME || '℘ཞıŋƈɛ◎ŋɛ'
+const OWNER_NAME = process.env.OWNER_NAME || 'Princeone'
 const APIKEY = process.env.APIKEY;
 const mentionUser = [...new Set([...(m.mentionedJid || []), ...(m.quoted ? [m.quoted.sender] : [])])]
 
@@ -197,7 +197,7 @@ client.sendPresenceUpdate('composing', from)
 if (process.env.AUTO_READ || 'true' === 'true' && command) {
 client.readMessages([m.key])
 }
-if (process.env.ALWAYS_ONLINE || 'false' === 'false') { 
+if (process.env.ALWAYS_ONLINE || 'true' === 'true') { 
   client.sendPresenceUpdate('available', m.chat) 
 }
 else {
@@ -309,7 +309,7 @@ const reactionMessage = {
    Hi 👋 *${pushname}*
    
 ╭◯━━━  *Bot Info* ━━━◯
-│ 🤖 *Bot Name* : *GSS_BOTWA*
+│ 🤖 *Bot Name* : *℘ཞıŋƈɛ◎ŋɛ*
 │ 👤 *Owner Name* : *${OWNER_NAME}*
 │ 👨‍💻 *owner number* : *${owner}*
 │ 🚀 *Prefix* :  *${prefix}*
